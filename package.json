@@ -1,0 +1,35 @@
+{
+  "name": "myshelf",
+  "description": "Authorify yourself",
+  "dependencies": {
+    "body-parser": "*",
+    "crypto": "^1.0.1",
+    "express": "*",
+    "express-session": "*",
+    "gulp-nodemon": "^2.2.1",
+    "http-status": "*",
+    "jsonwebtoken": "^7.4.3",
+    "mongoose": "*",
+    "morgan": "*",
+    "passport": "^0.4.0",
+    "passport-facebook": "*",
+    "passport-jwt": "^3.0.0",
+    "pbkdf2": "^3.0.14",
+    "randombytes": "^2.0.6",
+    "stripe": "*",
+    "superagent": "*",
+    "underscore": "*",
+    "wagner-core": "*"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-mocha": "*",
+    "mocha": "*",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "test": "mocha test.js",
+    "watch": "gulp watch",
+    "nodemon": "nodemon index.js"
+  }
+}
