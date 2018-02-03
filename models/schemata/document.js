@@ -1,7 +1,7 @@
 let mongoose = require("mongoose")
 
 let documentSchema = {
-	
+
 	"info": {
 		"title": {
 			type: String,
@@ -45,7 +45,7 @@ let documentSchema = {
 		},
 		"is_public": {
 			type: Boolean,
-			default: false,
+			default: true,
 			set: function(v){
 				this.is_private = false;
 				this.share_circle = [];

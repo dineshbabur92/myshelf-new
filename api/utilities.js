@@ -33,13 +33,15 @@ const hashPassword = function(password) {
 }
 
 const isPasswordCorrect = function(savedHash, savedSalt, savedIterations, passwordAttempted) {
-    return savedHash == pbkdf2.pbkdf2Sync( 
-    	passwordAttempted, 
-    	savedSalt, 
-    	savedIterations, 
-	  	config.authentication.hashLength, 
-	  	config.authentication.hashDigest
-  	);
+	// console.log(savedHash);
+	// console.log(passwordAttempted);
+	return savedHash == pbkdf2.pbkdf2Sync( 
+  	passwordAttempted, 
+  	savedSalt, 
+  	savedIterations, 
+  	config.authentication.hashLength, 
+  	config.authentication.hashDigest
+	);
 }
 
 

@@ -2,18 +2,20 @@ let mongoose = require("mongoose")
 
 let contentSchema = {
 
-	"number": {
-		type: Number,
-		required: true
-	},
-	"description": {
-		type: Object,
-		required: true
-	},
-	"document": {
-		type: mongoose.Schema.Types.ObjectId
+	info: {
+		index: {
+			type: Number,
+			required: true
+		},
+		contents: {
+			type: Object,
+			required: true
+		},
+		document: {
+			type: mongoose.Schema.Types.ObjectId
+		}
 	}
-	
+
 }
 
 module.exports.contentSchema = contentSchema;
