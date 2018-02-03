@@ -3,8 +3,6 @@ var httpstatus = require("http-status");
 var express = require("express");
 var underscore = require("underscore");
 
-
-
 module.exports = function(wagner){
 
 	const documentHandlers = require("./document-handlers")(wagner);
